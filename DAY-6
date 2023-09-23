@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+   int n;
+   printf("the number of people going to the resturant are: ");
+   scanf("%d" , &n);
+    
+    if(n%4==0)
+    { 
+        printf("The minnium number of cars required is: %d\n", (n/4));
+    }
+    else {
+        printf("The minnium number of cars required is: %d\n", (n/4)+1);
+        /* the (n/4)+1 gives right answer because we have done this as an integer type question and used int therefore it removes value after decimal point that will come from incomplete division */
+    }
+     return 0;
+}
