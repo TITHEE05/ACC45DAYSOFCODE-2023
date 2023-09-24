@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int x,y;
+    
+    printf("the following and followers of the account are as follows: ");
+    scanf("%d %d",&x,&y);
+    
+    if(x>=y*10){
+        printf("the account is a spam");
+    } 
+    else { printf("the account is not a spam"); 
+        
+    }
+    return 0;
+}
