@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+int X,Y;
+printf("enter volume of geaser and bucket: ");
+scanf("%d %d",&X,&Y);
+    printf("the maximum number of people that can take a bath are : %d", X/(Y*2));
+
+return 0;
+}
