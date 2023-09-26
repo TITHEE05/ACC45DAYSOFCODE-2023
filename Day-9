@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y;
+    
+    // Input the cost of renting and purchasing the cooler
+    printf("Enter the cost of renting (X): ");
+    scanf("%d", &X);
+    
+    printf("Enter the cost of purchasing (Y): ");
+    scanf("%d", &Y);
+    
+    // Calculate the maximum number of months Chef can rent the cooler
+    int months = 0;
+    while (X * months < Y) {
+        months++;
+    }
+    
+    printf("Chef can rent the cooler for a maximum of %d months.\n", months);
+    
+    return 0;
+}
+
+
+
+
+
+
