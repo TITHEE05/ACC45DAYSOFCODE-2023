@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int N,M;
+    printf("the number of overs remaining are: ");
+    scanf("%d", &M);
+    printf("the number of runs chefs team need to win: ");
+    scanf("%d", &N);
+   
+    if(N>=M*36){
+        printf("chefs team can not win");
+    }else{
+        printf("chefs team can win");
+    }
+ return 0;
+}
