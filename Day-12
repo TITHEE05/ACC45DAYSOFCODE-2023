@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int X, Y, Z;
+
+    // Input the values of X (bullet speed in pixels per frame), Y (distance to goomba in pixels), and Z (minimum time in seconds)
+    printf("Enter bullet speed (X pixels per frame): ");
+    scanf("%d", &X);
+    printf("Enter distance to goomba (Y pixels): ");
+    scanf("%d", &Y);
+    printf("Enter minimum time (Z seconds): ");
+    scanf("%d", &Z);
+
+    // Calculate the minimum time to shoot the bullet to hit the goomba
+    int hittingtime= Y / X;
+
+    // Check if Mario needs to wait for at least Z seconds
+    if (hittingtime >= Z) {
+        printf("Mario should shoot the bullet now to hit the goomba after at least %d seconds.\n", Z);
+    } else {
+        printf("Mario should wait for at least %d seconds before shooting the bullet to hit the goomba.\n", Z);
+    }
+
+    return 0;
+}
