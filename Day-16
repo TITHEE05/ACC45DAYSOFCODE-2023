@@ -1,0 +1,25 @@
+/*question is Chef has N candies. He has to distribute them to exactly 
+M of his friends such that each friend gets equal number of candies and each friend gets even number of candies. Determine whether it is possible to do so
+*/
+
+#include <stdio.h>
+
+int main(){
+
+    //declaring n and m
+    int N;
+    printf("the number of candies chef has is (N): ");
+    scanf("%d", &N);
+    int M;
+    printf("the number of friends chef has are (M): ");
+    scanf("%d", &M);
+
+    //applying formula to check if they all get equal candies and the amount of them is even
+    if((N/M)%2==0){
+        printf("yes it is possible");
+    }else{
+        printf("no it is not possible");
+    }
+    return 0;
+    
+}
