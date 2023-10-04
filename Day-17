@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int seatNumber;
+    printf("give seat number: ");
+    scanf("%d",&seatNumber);
+  
+    // Check if the seat is in the Lower deck or Upper deck
+    if (seatNumber >= 1 && seatNumber <= 15) {
+        // Lower deck
+        if (seatNumber>=11 && seatNumber<=15) {
+            printf("Lower Single\n");
+        } else {
+            printf("Lower Double\n");
+        }
+    } else if (seatNumber >= 16 && seatNumber <= 30) {
+        // Upper deck
+        if (seatNumber>=26 && seatNumber<=30) {
+            printf("Upper Single\n");
+        } else {
+            printf("Upper Double\n");
+        }
+    } else {
+        printf("Invalid seat number\n");
+    }
+
+    return 0;
+}
