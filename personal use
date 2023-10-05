@@ -1,0 +1,140 @@
+#include <stdio.h>
+
+int main() {
+   /*write a program to find the largest and second largest number out of the 5 numbers provided by the user*/
+   int n1,n2,n3,n4,n5;
+   printf("enter 5 numbers: ");
+   scanf("%d %d %d %d %d", &n1, &n2, &n3, &n4, &n5);
+   
+   //largest number
+   if(n1>=n2 && n1>=n3 && n1>=n4 && n1>=n5)
+   printf("the largest number is %d", n1); 
+   else {
+       if(n1>=n2&&n1>=n3&&n1>=n4&&n1<=n5)
+   printf("the second largest number is %d", n1);
+   else{
+       if(n1>=n2&&n1>=n3&&n1<=n4&&n1>=n5)
+printf("the second largest number is %d", n1);
+   else{ 
+       if(n1>=n2&&n1<=n3&&n1>=n4&&n1>=n5)
+printf("the second largest number is %d", n1);
+   else{
+  if(n1<=n2&&n1>=n3&&n1>=n4&&n1>=n5)
+printf("the second largest number is %d", n1);
+
+
+   else { 
+       if(n2>=n1 && n2>=n3 && n2>=n4 && n2>=n5)
+   printf("the largest number is %d", n2); 
+   else{
+       if(n2>=n1&&n2>=n3&&n2>=n4&&n2<=n5)
+   printf("the second largest number is %d", n2);
+   else{ 
+       if(n2>=n1&&n2>=n3&&n2>=n4&&n2<=n5)
+   printf("the second largest number is %d", n2);
+   else{
+       if(n2>=n1&&n2<=n3&&n2>=n4&&n2>=n5)
+   printf("the second largest number is %d", n2);
+   else{ 
+       if(n2<=n1&&n2>=n3&&n2>=n4&&n2>=n5)
+   printf("the second largest number is %d", n2);
+       
+       
+   else{
+       if(n3>=n1 && n3>=n2 && n3>=n4 && n3>=n5)
+    printf("the largest number is %d", n3); 
+    else{ 
+        if(n3>=n1&&n3>=n2&&n3>=n4&&n3<=n5)
+   printf("the second largest number is %d", n3);
+   else{ 
+       if(n3>=n1&&n3>=n2&&n3<=n4&&n3>=n5)
+   printf("the second largest number is %d", n3);
+   else{   
+       if(n3>=n1&&n3<=n2&&n3>=n4&&n3>=n5)
+   printf("the second largest number is %d", n3);
+   else{
+       if(n3<=n1&&n3>=n2&&n3>=n4&&n3>=n5)
+   printf("the second largest number is %d", n3);
+       
+       
+   else { 
+       if(n4>=n1 && n4>=n2 && n4>=n3 && n4>=n5)
+       printf("the largest number is %d", n4);
+       else{   
+           if(n4>=n1&&n4>=n2&&n4>=n3&&n4<=n5)
+   printf("the second largest number is %d", n4);
+   else{ 
+       if(n4>=n1&&n4>=n2&&n4<=n3&&n4>=n5)
+   printf("the second largest number is %d", n4);
+   else{ 
+       if(n4>=n1&&n4<=n2&&n4>=n3&&n4>=n5)
+   printf("the second largest number is %d", n4);
+   else{ 
+       if(n4<=n1&&n4>=n2&&n4>=n3&&n4>=n5)
+   printf("the second largest number is %d", n4);
+   
+           
+       else{ 
+               if(n5>=n1 && n5>=n2 && n5>=n3 && n5>=n4)
+        printf("the largest number is %d", n5);
+    else{ 
+        if(n5>=n1&&n5>=n2&&n5>=n3&&n5<=n4)
+   printf("the second largest number is %d", n5);
+   else{  
+       if(n5>=n1&&n5>=n2&&n5<=n3&&n5>=n4)
+   printf("the second largest number is %d", n5);
+   else{
+       if(n5>=n1&&n5<=n2&&n5>=n3&&n5>=n4)
+   printf("the second largest number is %d", n5);
+   else{
+       if(n5<=n1&&n5>=n2&&n5>=n3&&n5>=n4)
+   printf("the second largest number is %d", n5);
+   
+}
+       
+   }
+       
+   }
+        
+    }
+           
+       }
+       
+   }
+       
+   }
+       
+   }
+           
+       }
+       
+   }
+       
+   }
+       
+   }
+       
+   }
+        
+    }
+       
+   }
+       
+   }
+       
+   }
+       
+   }
+       
+   }
+       
+   }
+}
+}
+} 
+}  
+// second largest number
+
+return 0;
+
+}
