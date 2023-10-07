@@ -1,0 +1,17 @@
+#include <stdlib.h>
+
+int main() {
+    int X, Y;
+
+    // Input current volume X and target volume Y
+    printf("Enter current volume X: ");
+    scanf("%d", &X);
+    printf("Enter target volume Y: ");
+    scanf("%d", &Y);
+
+    int button_presses = abs(X - Y); // Calculate the absolute difference
+
+    printf("Minimum number of button presses required: %d\n", button_presses);
+
+    return 0;
+}
