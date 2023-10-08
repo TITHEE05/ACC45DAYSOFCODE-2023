@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    double W, X, Y;
+    int Z;
+
+    // Input current account balance W, monthly deposit X, monthly bank charges Y, and the number of months Z
+    printf("Enter current account balance (W): ");
+    scanf("%lf", &W);
+    printf("Enter monthly deposit amount (X): ");
+    scanf("%lf", &X);
+    printf("Enter monthly bank charges (Y): ");
+    scanf("%lf", &Y);
+    printf("Enter the number of months (Z): ");
+    scanf("%d", &Z);
+
+    // Calculate the final account balance
+    for (int i = 0; i < Z; i++) {
+        W += X;   // Add the monthly deposit
+        W -= Y;   // Deduct the monthly bank charges
+    }
+
+    printf("Final account balance after %d months: %.2lf rupees\n", Z, W);
+
+    return 0;
+}
