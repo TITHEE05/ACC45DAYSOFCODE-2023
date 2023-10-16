@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables to store the amounts A, B, C, and the subscription cost X.
+    int A, B, C, X;
+
+    // Input the amounts A, B, C, and X from the user.
+    printf("Enter the amounts A, B, C, and the subscription cost X: ");
+    scanf("%d %d %d %d", &A, &B, &C, &X);
+
+    // Check if any two of them can contribute to buy a subscription.
+    if ((A + B >= X) || (A + C >= X) || (B + C >= X)) {
+        printf("Yes, at least two of them can contribute to buy the subscription.\n");
+    } else {
+        printf("No, they cannot buy the subscription together.\n");
+    }
+
+    return 0;
+}
