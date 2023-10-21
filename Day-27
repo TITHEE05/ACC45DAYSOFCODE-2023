@@ -19,3 +19,4 @@ int main() {
     printf("The minimum time for the policeman to catch the thief is %d seconds.\n", time);
     
     return 0;
+}
