@@ -1,0 +1,26 @@
+   #include <stdio.h>
+int main() {
+    int X, Y, A, B;
+    
+    // Input the quantities and initial temperature
+    printf("Enter the amount of hot water (X): ");
+    scanf("%d", &X);
+    printf("Enter the amount of cold water (Y): ");
+    scanf("%d", &Y);
+    printf("Enter the initial temperature (A): ");
+    scanf("%d", &A);
+    printf("Enter the desired temperature (B): ");
+    scanf("%d", &B);
+    
+    // Calculate the final temperature
+    int finalTemperature = A + (X - Y);
+    
+    // Check if the final temperature matches the desired temperature
+    if (finalTemperature == B) {
+        printf("Chef can achieve the desired temperature for a perfect bath.\n");
+    } else {
+        printf("Chef cannot achieve the desired temperature for a perfect bath.\n");
+    }
+    
+    return 0;
+}
