@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int W, X, Y, Z;
+    printf("Enter the weight of the object (W): ");
+    scanf("%d", &W);
+    printf("Enter the weights of the three weights (X, Y, Z): ");
+    scanf("%d %d %d", &X, &Y, &Z);
+
+    if (W == X || W == Y || W == Z || W == X + Y || W == X + Z || W == Y + Z || W == X + Y + Z) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
+}
