@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int total_storage, a1_size, a2_size, new_app_size;
+    
+    // Input the total storage, sizes of existing apps, and the size of the new app
+    printf("Enter the total storage of Chef's phone (S in MB): ");
+    scanf("%d", &total_storage);
+    printf("Enter the size of the first app (X in MB): ");
+    scanf("%d", &a1_size);
+    printf("Enter the size of the second app (Y in MB): ");
+    scanf("%d", &a2_size);
+    printf("Enter the size of the new app (Z in MB): ");
+    scanf("%d", &new_app_size);
+
+    // Calculate the total memory used by existing apps
+    int total_app_memory = a1_size + a2_size;
+// Calculate the remaining storage after considering the new app
+    int remaining_storage = total_storage - new_app_size;
+
+    int apps_to_delete = 0; 
+// Initialize the number of apps to delete
+
+    // Check if Chef needs to delete any apps to install the new app
+    if (total_app_memory + new_app_size > total_storage) {
+        // Chef doesn't have enough storage, so he needs to delete one or more apps
+        while (total_app_memory + new_app_size > total_storage) {
+            // Delete the app with the largest size (either a1 or a2)
+            if (app1_size > app2_size) {
+                total_app_memory -= a1_size;
+                a1_size = 0; // App1 is deleted
+            } else {
+                total_app_memory -= a2_size;
+                a2_size = 0; // App2 is deleted
+            }
+            apps_to_delete++;
+        }
+    }
+
+    printf("Minimum number of apps Chef has to delete: %d\n", apps_to_delete);
+
+    return 0;
+}
