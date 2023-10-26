@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int N;
+    
+    printf("Enter the number of pieces Chef wants (N): ");
+    scanf("%d", &N);
+    
+    // Check if Chef can divide the pizza into N pieces
+    // A circular pizza can be divided into N pieces if n can divide 360 completely
+    if (360 % N == 0) {
+        printf("Chef can divide the pizza into %d pieces.\n", N);
+    } else {
+        printf("Chef cannot divide the pizza into %d pieces.\n", N);
+    }
+    
+    return 0;
+}
