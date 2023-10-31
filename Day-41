@@ -1,0 +1,36 @@
+//23-09-23 intermediate question
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int T;
+    scanf("%d", &T); // Number of test cases
+while (T--) {
+        char N_str[15]; // To store the integer as a string
+        scanf("%s", N_str);
+
+        int N_len = strlen(N_str);
+        int has_zero = 0;
+        int sum_of_digits = 0;
+
+        for (int i = 0; i < N_len; i++) {
+            int digit = N_str[i] - '0';
+            sum_of_digits += digit;
+            if (digit == 0) {
+                has_zero = 1;
+            }
+        }
+
+        if (has_zero && (sum_of_digits % 3 == 0)) {
+            // If there is at least one zero, and the sum of digits is a multiple of 3,
+            // we can rearrange the digits to make a multiple of 5.
+            printf("YES\n");
+        } else {
+            // Otherwise, it's not possible to rearrange the digits to obtain a multiple of 5.
+            printf("NO\n");
+        }
+    }
+
+    return 0;
+}
