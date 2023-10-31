@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int X;
+    scanf("%d", &X);
+
+    if (X % 5 != 0) {
+        // If X is not a multiple of 5, it cannot be paid with 5-rupee and 10-rupee coins.
+        printf("-1\n");
+    } else {
+        //the number of 10-rupee coins required.
+        int tens = X / 10;
+        
+        //the number of 5-rupee coins required.
+        int fives = (X % 10) / 5;
+        
+        // Calculate the total number of coins needed.
+        int total_coins = tens + fives;
+        
+        printf("%d\n", total_coins);
+    }
+
+    return 0;
