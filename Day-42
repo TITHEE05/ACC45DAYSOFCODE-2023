@@ -1,0 +1,15 @@
+//24-09-23 intermediate question
+
+#include <stdio.h>
+
+int main() {
+    int PA, PB, PC;
+    scanf("%d %d %d", &PA, &PB, &PC);
+
+    // Invite everyone from regions A and C, without inviting anyone from region B.
+    int total_people_invited = PA + PC;
+
+    printf("%d\n", total_people_invited);
+
+    return 0;
+}
