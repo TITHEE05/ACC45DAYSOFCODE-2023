@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    int N, A, B;
+    scanf("%d %d %d", &N, &A, &B);
+
+    char S[N + 1];
+    scanf("%s", S);
+
+    int total_time = 0;
+
+    for (int i = 0; i < N; i++) {
+        if (S[i] == '0') {
+            total_time += A; // Inter-district e-pass application time
+        } else {
+            total_time += B; // Inter-state e-pass application time
+        }
+    }
+
+    printf("%d\n", total_time);
+
+    return 0;
+}
