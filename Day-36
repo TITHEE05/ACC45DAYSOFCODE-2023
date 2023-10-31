@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int P, Q;
+    scanf("%d %d", &P, &Q);
+
+    // Calculate the total number of serves made.
+    int total_serves = P + Q;
+
+    // If the total number of serves is even, it's Alice's serve. If it's odd, it's Bob's serve.
+    if (total_serves % 2 == 0) {
+        printf("Alice\n");
+    } else {
+        printf("Bob\n");
+    }
+
+    return 0;
+}
