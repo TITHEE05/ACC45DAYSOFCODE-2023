@@ -1,0 +1,18 @@
+//22-09-23 intermediate question
+
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T); // Number of test cases
+
+    while (T--) {
+        int N;
+        scanf("%d", &N); // Number of hoops
+
+        // The last hoop that will be jumped into is (N + 1) / 2.
+        printf("%d\n", (N + 1) / 2);
+    }
+
+    return 0;
+}
