@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int T; // Number of test cases
+    scanf("%d", &T);
+
+    while (T--) {
+        int X, Y; // Total movie duration and duration Chef watches at twice the speed
+        scanf("%d %d", &X, &Y);
+
+        // Calculate the time Chef spends watching the movie
+        int normal_speed_time = X - (Y / 2); // Time spent watching at normal speed
+        int total_time = normal_speed_time + Y; // Total time Chef spends
+
+        printf("%d\n", total_time);
+    }
+
+    return 0;
