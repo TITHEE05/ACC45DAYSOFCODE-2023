@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+
+    // Dracula can indulge in his favorite menu every 7 days (including today i.e Monday).
+    // So how many complete cycles of 7 days are in N.
+    int cycles = N / 7;
+
+    // how many additional Tuesdays Dracula can enjoy before Halloween.
+    int extra_days = N % 7;
+
+    // Initialize the count of Tuesdays to 0.
+    int tuesdays = 0;
+
+    // Loop through the extra days to count the additional Tuesdays.
+    for (int i = 1; i <= extra_days; i++) {
+        if (i % 7 == 2) { // Tuesday corresponds to 2 when using a 0-based index.
+            tuesdays++;
+        }
+    }
+
+    // Total count of Tuesdays Dracula can enjoy.
+    int total_tuesdays = (cycles * 2) + tuesdays;
+
+    printf("%d\n", total_tuesdays);
+
+    return 0;
+}
