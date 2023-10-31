@@ -1,0 +1,20 @@
+//21-9-23 intermideate question
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int L, V1, V2;
+    scanf("%d %d %d", &L, &V1, &V2);
+
+    if (V1 >= V2) {
+        // The hare cannot win no matter what.
+        printf("-1\n");
+    } else {
+        // Calculate the longest time the hare can wait and still win the race.
+        double longest_wait_time = ceil((double)L / (V2 - V1));
+        printf("%.0lf\n", longest_wait_time);
+    }
+
+    return 0;
+}
